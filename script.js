@@ -11,12 +11,19 @@ genres:[],
 privat:false
 };
 
-const a = prompt('odin iz poslednig prosmotrennyh filmov?',''),
-    b = prompt('kak ochenite film?',''),
-    c = prompt ('odiz iz  poslednih prosmotrennyh filmov?', ''),
-    d = prompt ('kak ochenite film','');
+// const a = prompt('odin iz poslednig prosmotrennyh filmov?',''),
+//     b = prompt('kak ochenite film?',''),
+//     c = prompt ('odiz iz  poslednih prosmotrennyh filmov?', ''),
+//     d = prompt ('kak ochenite film','');
 
-     personalMovieDB.movies[a] = b;
-     personalMovieDB.movies[c] = d;
+//      personalMovieDB.movies[a] = b;
+//      personalMovieDB.movies[c] = d;
+//  переписали код 
+     for(let i = 0; i < 2; i++){
+        const a = prompt('odin iz poslednig prosmotrennyh filmov?',''),
+              b = prompt('kak ochenite film?','');
+
+        personalMovieDB.movies[a] = b;
+     }
 
 console.log(personalMovieDB);     
